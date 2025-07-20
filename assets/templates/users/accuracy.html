@@ -1,0 +1,20 @@
+{%extends 'users/userbase.html'%}
+
+{%block contents%}
+<p><h3 align="center" style="color:white; font-weight:bold;">Machine Learning Reports</h3></p>
+<center>
+    <h2>Machine Learning Results</h2>
+        <table border="2px">
+            <tr>
+                <td>Naive Bayes</td><td>{{nb|safe}}</td>
+                <td>K Nearest Neighbor</td><td>{{knn|safe}}</td>
+            </tr>
+             <tr>
+                <td>support vector machine</td><td>{{svm|safe}}</td>
+            </tr>
+            
+
+        </table>
+</center>
+
+{%endblock%}
